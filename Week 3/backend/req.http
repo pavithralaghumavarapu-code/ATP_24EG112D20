@@ -1,0 +1,71 @@
+//get and delete req donothave data body so they send data by end point
+
+#
+GET http://localhost:3000/product-api/prods
+
+###read product by brand  //product-api is a api path which api 
+GET http://localhost:3000/product-api/prods/puma
+
+
+
+###
+PUT http://localhost:3000/product-api/prods
+Content-Type: application/json
+
+{
+    "productId":2,
+    "name":"TV",
+    "brand":"sony",
+    "price":500000
+}
+
+
+###
+POST http://localhost:3000/product-api/prods
+Content-Type: application/json
+
+{
+    "productId":1,
+    "name":"Shoes",
+    "brand":"puma",
+    "price":500000
+}
+
+
+###
+DELETE http://localhost:3000/prods/2
+
+
+
+###read all users
+GET http://localhost:3000/users
+
+###read a user by id
+GET http://localhost:3000/users/1
+###
+
+##create new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"vijju",
+    "age":19
+}
+
+
+###
+ PUT  http://localhost:3000/users
+ Content-Type:  application/json
+
+{
+    "id":2,
+    "name":"pavithra",
+    "age":20
+}
+
+
+### delete a user by id
+DELETE http://localhost:3000/users/2
+                                //send id or name anything sendind (argument throug
