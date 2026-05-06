@@ -1,56 +1,116 @@
-Classes in JavaScript
-JS supports OOP + Functional programming
-A class = blueprint for objects
-Not very popular in JS (functions preferred)
-React Hooks (v16.8) reduced need for classes
-In TypeScript:
-Classes are common
-But interfaces & types can also be used
- Function vs Method
-Function → called independently
-Method → called using an object
-Function → no direct this
-Method → has access to this
-Function → defined separately
-Method → defined inside object/class
- Static in Classes
-3 ways to define static:
-Using static keyword
-Inside static block
-Inside static method
-Static block runs before constructor
-Reason: runs when class loads into memory
-🔹 Modules
-Modules = reusable code across files
-Default Export
-Only one per file
-Can import with any name
-Named Export
-Multiple exports allowed
-Must use same name with {}
- Optional Chaining & Nullish Coalescing
-?. → avoids errors for undefined properties
-?? → provides default value for null/undefined
- Dates in JavaScript
-Use Date object
-Default format → ISO (UTC)
-Internally stored as timestamp
-Important Methods
-Get → getFullYear(), getMonth(), getDate()
-Set → setFullYear(), setMonth()
-getTime() → timestamp
- Copying Data
-Primitives → copied by value
-Reference → copied by reference
- Shallow vs Deep Copy
-Shallow copy:
-Copies top-level only
-Nested objects still linked
-Deep copy:
-Fully independent copy
-Use structuredClone()
- Error Handling
-Use Error object
-Custom errors using extends Error
-Handle using:
-try...catch
+ # 📘 Week 2 - Intermediate JavaScript (MERN Stack Preparation)
+
+This repository contains Week 2 practice programs focused on advancing JavaScript concepts essential for MERN stack development. The exercises emphasize array methods, modular programming, object-oriented concepts, and asynchronous behavior.
+
+---
+
+## 📂 Files Included
+
+### 🔹 Array & Copy Concepts
+
+#### `arrayMethods.js`
+
+* Demonstrates built-in array methods like `map()`, `filter()`, `reduce()`, etc.
+* Helps understand functional programming in JavaScript.
+
+#### `arrayCopy.js`
+
+* Explains how to copy arrays.
+* Covers methods like spread operator (`...`) and `slice()`.
+
+#### `shallowAnd DeepCopy.js`
+
+* Differentiates between shallow copy and deep copy.
+* Shows how object references work in memory.
+
+---
+
+### 🔹 Modules & File Structure
+
+#### `modulesWithFiles-task.js`
+
+* Demonstrates modular programming using multiple files.
+* Focuses on separating logic for better scalability.
+
+#### `app.js`
+
+* Main entry file.
+* Integrates and executes functionality from other modules.
+
+#### `validator.js`
+
+* Contains reusable validation functions.
+* Example: input validation logic for better code organization.
+
+---
+
+### 🔹 Object-Oriented Programming
+
+#### `classBook.js`
+
+* Introduces JavaScript classes.
+* Covers constructors, methods, and object creation.
+
+---
+
+### 🔹 Asynchronous JavaScript
+
+#### `timing Functions.js`
+
+* Demonstrates timing functions like:
+
+  * `setTimeout()`
+  * `setInterval()`
+* Helps understand non-blocking execution in JavaScript.
+
+---
+
+## 🎯 Learning Objectives
+
+* Master advanced array operations
+* Understand shallow vs deep copy concepts
+* Learn modular coding with multiple files
+* Practice object-oriented programming (OOP)
+* Understand asynchronous behavior using timing functions
+
+---
+
+## 🛠️ Tech Used
+
+* JavaScript (ES6+)
+* Node.js
+
+---
+
+## ▶️ How to Run
+
+1. Install Node.js
+2. Navigate to the project folder
+3. Run any file using:
+
+```bash
+node filename.js
+```
+
+Example:
+
+```bash
+node app.js
+```
+
+---
+
+## 🚀 Next Step
+
+* Working with APIs (Fetch / Axios)
+* Express.js backend development
+* MongoDB integration
+* Authentication & Middleware
+
+---
+
+## 📌 Note
+
+This is part of Week 2 practice aimed at strengthening intermediate JavaScript skills, forming a solid base for backend development in the MERN stack.
+
+---
