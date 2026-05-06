@@ -1,117 +1,90 @@
-Javascript
-to print in cosolve we use console.log() in javascript.
+ # 📘 Week 1 - JavaScript Fundamentals (MERN Stack Preparation)
 
-Data Types in Javascript
---> Primitive Data Types: A. Numeric
+This repository contains basic JavaScript programs focused on building a strong foundation for the MERN stack. These exercises cover core concepts like functions, arrays, and conditional logic.
 
-Number
-BigInt B. Non Numeric
-String
-Boolean
-Undefined
-Null
---> Non Primitive Data Types:
+---
 
-Object
-Array
-Function
-Everything is an Object in Javascript
-static or primitive data types are stored in stack memory
-non primitive or reference data types are stored in heap memory
-one reference is stored in stack memory which points to the actual object stored in heap memory
-c,c++,java are statically typed languages
-javascript is dynamically typed language
-functions in javascript
-java contains only methods as everhything is inside class
-javascript contains functions as well as methods
-c contains functions only
-c++ contains functions and methods both
-operators in javascript
-important is = == and = = =
+## 📂 Files Included
 
-conditional statements and control statements in javascript are same as c,c++,java
-collections of Data
-Array -->
+### 1. `arraySum.js`
 
-ordered collection of data
-indexed collection of data
-we can store heterogeneous data in array in javascript but preferably we should store homogeneous data
-index starts from 0 but why ? --> because its easier to calculate the offset from the base address. --> offset = index * size of each element
-Object -->
+* Calculates the sum of elements in an array.
+* Demonstrates basic array traversal using loops.
 
-unordered collection of data
-key-value pair collection of data
-we can store heterogeneous data in object
-key should be unique and value can be duplicate
-key is always string data type but value can be of any data type
-each key value pair is called property of object.
-exceptions can be handled but errors cannot be handled.
-array operations in javascript
-push() --> adds an element at the end of the array
-pop() --> removes an element from the end of the array
-unshift() --> adds an element at the beginning of the array
-shift() --> removes an element from the beginning of the array
-splice() --> adds/removes elements from the array at a specific index
-slice() --> returns a new array by extracting a portion of the array
-how to use splice() method
-let arr = [1, 2, 3, 4, 5];
-// to add elements
-arr.splice(2, 0, 6, 7); // at index 2, remove 0 elements, add 6 and 7
-console.log(arr); // [1, 2, 6, 7, 3, 4, 5]
-// to remove elements
-arr.splice(2, 2); // at index 2, remove 2 elements
-console.log(arr); // [1, 2, 3, 4, 5]
-object operations
-first understand mulatable and immutable
-immutable
-let a = 10; // immutable as when we update the value of a a new memory is allocated and the variable a points to the new memory location
+### 2. `arrSumUsingFun.js`
 
-so we have a point that all primitive data types are immutable in javascript. which means they cannot be modified once they are created.
+* Calculates the sum of array elements using a function.
+* Focuses on modular and reusable code.
 
-code example:
+### 3. `sum Using Function.js`
 
-let a = 10;
-a = a + 1;
-a = a * 10;
-// first a points to memory location of 10
-// then a points to memory location of 11
-// then a points to memory location of 110
-console.log(a); // 110
-mutable
-All reference data types are mutable in javascript.
+* Performs addition using a custom function.
+* Introduces function parameters and return values.
 
-packing of objects in javascript
-Destructuring of objects in javascript
-example code:
-let person = {
-    name: "John",
-    age: 30,
-    city: "New York"
-};
-// here the variable names should be same as the key names in the object
-// otherwise it will give undefined
+### 4. `bigInTwo.js`
 
-let {name, age, city} = person;
-console.log(name); // John
-console.log(age); // 30
-console.log(city); // New York
+* Finds the largest number between two values.
+* Uses conditional statements (`if-else`).
 
-// if we want only name and city
-let {name, city} = person;
-console.log(name); // John
-console.log(city); // New York
-Callback function in javascript
-A callback function is a function that is passed as an argument to another function and is executed after some operation has been completed.
-example code:
-function test1(a){
-    console.log(a); // this will give anonymous function
-    console.log(a()); // this will execute the anonymous function and give 123
+### 5. `bigInThree.js`
 
-}
-test1(function(){
-    return 123;
-});
-name of func,how many params,what does it return
-this is very important for understanding any function
+* Finds the largest number among three values.
+* Enhances logical comparison skills.
 
-So please read the docs carefully and understand the function before using it.
+### 6. `smallEle.js`
+
+* Identifies the smallest element in a set or array.
+* Demonstrates comparison logic.
+
+---
+
+## 🎯 Learning Objectives
+
+* Understand JavaScript basics
+* Practice working with arrays
+* Learn how to write reusable functions
+* Improve problem-solving using conditions
+* Build logic for comparisons and calculations
+
+---
+
+## 🛠️ Tech Used
+
+* JavaScript (ES6 basics)
+* Node.js (for running scripts)
+
+---
+
+## ▶️ How to Run
+
+1. Install Node.js if not already installed
+2. Open terminal in project folder
+3. Run any file using:
+
+```bash
+node filename.js
+```
+
+Example:
+
+```bash
+node arraySum.js
+```
+
+---
+
+## 🚀 Next Step
+
+Move towards:
+
+* Objects & Arrays (advanced)
+* DOM Manipulation
+* Backend basics with Express.js
+
+---
+
+## 📌 Note
+
+This is part of Week 1 practice for building a strong base before diving into full MERN stack development.
+
+---
