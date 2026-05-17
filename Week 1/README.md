@@ -1,10 +1,10 @@
- # 📘 Week 1 - JavaScript Fundamentals (MERN Stack Preparation)
+ #  Week 1 - JavaScript Fundamentals (MERN Stack Preparation)
 
 This repository contains basic JavaScript programs focused on building a strong foundation for the MERN stack. These exercises cover core concepts like functions, arrays, and conditional logic.
 
 ---
 
-## 📂 Files Included
+##  Files Included
 
 ### 1. `arraySum.js`
 
@@ -38,7 +38,7 @@ This repository contains basic JavaScript programs focused on building a strong 
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 * Understand JavaScript basics
 * Practice working with arrays
@@ -48,14 +48,14 @@ This repository contains basic JavaScript programs focused on building a strong 
 
 ---
 
-## 🛠️ Tech Used
+##  Tech Used
 
 * JavaScript (ES6 basics)
 * Node.js (for running scripts)
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 1. Install Node.js if not already installed
 2. Open terminal in project folder
@@ -73,7 +73,7 @@ node arraySum.js
 
 ---
 
-## 🚀 Next Step
+##  Next Step
 
 Move towards:
 
