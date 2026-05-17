@@ -1,12 +1,12 @@
- # 📘 Week 2 - Intermediate JavaScript (MERN Stack Preparation)
+ #  Week 2 - Intermediate JavaScript (MERN Stack Preparation)
 
 This repository contains Week 2 practice programs focused on advancing JavaScript concepts essential for MERN stack development. The exercises emphasize array methods, modular programming, object-oriented concepts, and asynchronous behavior.
 
 ---
 
-## 📂 Files Included
+## Files Included
 
-### 🔹 Array & Copy Concepts
+###  Array & Copy Concepts
 
 #### `arrayMethods.js`
 
@@ -25,7 +25,7 @@ This repository contains Week 2 practice programs focused on advancing JavaScrip
 
 ---
 
-### 🔹 Modules & File Structure
+###  Modules & File Structure
 
 #### `modulesWithFiles-task.js`
 
@@ -44,7 +44,7 @@ This repository contains Week 2 practice programs focused on advancing JavaScrip
 
 ---
 
-### 🔹 Object-Oriented Programming
+###  Object-Oriented Programming
 
 #### `classBook.js`
 
@@ -53,7 +53,7 @@ This repository contains Week 2 practice programs focused on advancing JavaScrip
 
 ---
 
-### 🔹 Asynchronous JavaScript
+###  Asynchronous JavaScript
 
 #### `timing Functions.js`
 
@@ -75,14 +75,14 @@ This repository contains Week 2 practice programs focused on advancing JavaScrip
 
 ---
 
-## 🛠️ Tech Used
+##  Tech Used
 
 * JavaScript (ES6+)
 * Node.js
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 1. Install Node.js
 2. Navigate to the project folder
@@ -100,7 +100,7 @@ node app.js
 
 ---
 
-## 🚀 Next Step
+## Next Step
 
 * Working with APIs (Fetch / Axios)
 * Express.js backend development
@@ -109,7 +109,7 @@ node app.js
 
 ---
 
-## 📌 Note
+##  Note
 
 This is part of Week 2 practice aimed at strengthening intermediate JavaScript skills, forming a solid base for backend development in the MERN stack.
 
