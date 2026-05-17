@@ -1,55 +1,19 @@
-Unique Properties:
-Unique properties are used to ensure that a field in a document is unique across all documents in a collection.
-We can set a field as unique by setting the unique property to true in the schema definition.
-Saving Password:
-We should never save passwords in plain text in the database.
-there are two ways to save passwords securely:
-Hashing : this is a one-way process. once the password is hashed it cannot be converted back to the original password. so it is secure.
-Encryption : this is not recommended for saving passwords. as it is done with the help of secret key which can be compromised. so it is a reversible process. and not secure.
-We should always hash the passwords before saving them in the database.
-We can use libraries like bcrypt.js to hash the passwords.
-in this we have no of rounds or cost factor or salt which makes the hashing process more secure.
-generally we use 8 to 12 rounds for hashing the passwords.
-Authentication:
-Authentication is the process of verifying the identity of a user.
-Every API has Two types of routes:
-Public Routes : these routes can be accessed by anyone without authentication.
-Protected Routes : these routes can be accessed only by authenticated users.
-User authentication means submitting the credentials and getting the tocken, it is same as pay the amount and get the ticket.
-Once a user has tocken, he is said to be authenticated.
-Steps for user Authentication:
-After receiving the user credentials:
-API verifies the username
-if username is matched then it compares the password
-if password is matched then it generates a tocken and sends it to the user
-JWT Authentication Flow:
-once the user credentials are verified, server generates a JWT token and sends it to the user.
-User stores the token in local storage or cookies.
-For every subsequent request to protected routes, user sends the token in the Authorization header.
-Important Points:
-whenever we store the token in local storage, it is vulnerable to XSS attacks.
-whenever we store the token in cookies, it is vulnerable to CSRF attacks.
-so the local storage, session storage and normal cookies are not secure for storing tokens.
-to store the token securely in cookies, we need to set the httpOnly and secure flags on the cookies.
-httpOnly flag prevents the client-side scripts from accessing the cookies.
-so the safest way to store the token is to use httpOnly and secure cookies. only server can access these cookies.
-There are two types of authentication:
-Session-based authentication
-Token-based authentication
-Authentication and Authorization are different:
-Authentication is the process of verifying the identity of a user.
-Authorization is the process of verifying the access rights of a user.
-Authentication is done before authorization.
-Making Authenticated Requests:
-When Client Application makes req after successful login, the httpOnly cookie containing the JWT token is ** automatically ** included in the request headers.
-The middleware in the express server can extract the cookie using libraries like cookie-parser.
-The middleware verifies the JWT token to authenticate the user.
-Aggregation Pipeline in Mongoose:
-Aggregation pipeline is a framework for data aggregation in MongoDB.
-It is used to perform complex data analysis and transformation operations on the data stored in MongoDB.
-It consists of a series of stages that process the data in a sequential manner.
-Each stage performs a specific operation on the data and passes the result to the next stage.
- 
-populate() function in Mongoose:
-The populate() function is used to populate the referenced documents in a document.
-It is used to perform JOIN operations in MongoDB.
+ # Week 4 Assignments
+
+This folder contains the work I did for week 4. It covers some basic HTML practice and the initial backend setup for the capstone project.
+
+### HTML Exercises
+I worked on two simple HTML files to get comfortable with page structure. The first one is just about using basic tags like headings, paragraphs, and simple lists to organize content. The second one goes a bit further into nested lists, which is great for showing how to group related items under different categories.
+
+### Capstone Backend
+The main focus this week was building the backend for the capstone project. I used Node.js and Express for the server and Mongoose to connect to the MongoDB database.
+
+Here is a breakdown of what I implemented:
+- I set up the main server file to handle the database connection and the port settings.
+- I created separate API routes for different roles like Admin, Author, and regular Users. This makes the project much easier to manage as it grows.
+- I built a login and registration system. It uses JWT tokens and cookies to handle authentication securely.
+- I created database models for Users and Articles to define how the data should be structured in MongoDB.
+- I added middleware to handle things like checking if a user is logged in and catching errors so the server provides useful feedback when something goes wrong.
+- I also included several .http files that I used to test the endpoints and make sure the registration, login, and article management work correctly.
+
+Overall, this week was about moving from simple static HTML to building a functional and secure server that can handle different types of users and data.
