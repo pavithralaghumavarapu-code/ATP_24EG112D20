@@ -83,7 +83,7 @@ Move towards:
 
 ---
 
-## 📌 Note
+##  Note
 
 This is part of Week 1 practice for building a strong base before diving into full MERN stack development.
 
