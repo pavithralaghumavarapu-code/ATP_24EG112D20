@@ -65,7 +65,7 @@ This repository contains Week 2 practice programs focused on advancing JavaScrip
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 * Master advanced array operations
 * Understand shallow vs deep copy concepts
